@@ -41,7 +41,7 @@ window.addEventListener("DOMContentLoaded", function () {
           });
 
         // Random color servise
-        rcolorArea.addEventListener('keydown', (event) => {
+        document.addEventListener('keydown', (event) => {
           if (event.code == "Space" ) {
             let randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
             rcolorArea.style.backgroundColor = randomColor;
